@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>Calculator</title>
+        <script src="https://kit.fontawesome.com/3a644c2888.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="calculator">
+            <input type="text" id="display" readonly placeholder="0">
+            <div>
+                <button id="ac" class="operator" onclick="clearall()">AC</button>
+                <button class="operator" onclick="showInDisplay('%')">%</button>
+                <button class="operator" onclick="del()"><i class="fa-solid fa-delete-left"></i></button>
+                <button class="operator" onclick="showInDisplay('÷')"><i class="fa-solid fa-divide"></i></button>
+            </div>
+            <div>
+                <button onclick="showInDisplay('7')">7</button>
+                <button onclick="showInDisplay('8')">8</button>
+                <button onclick="showInDisplay('9')">9</button>
+                <button class="operator" onclick="showInDisplay('×')"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div>
+                <button onclick="showInDisplay('4')">4</button>
+                <button onclick="showInDisplay('5')">5</button>
+                <button onclick="showInDisplay('6')">6</button>
+                <button class="operator" onclick="showInDisplay('-')">-</button>
+            </div>
+            <div>
+                <button onclick="showInDisplay('1')">1</button>
+                <button onclick="showInDisplay('2')">2</button>
+                <button onclick="showInDisplay('3')">3</button>
+                <button class="operator" onclick="showInDisplay('+')">+</button>
+            </div>
+            <div>
+                <button onclick="showInDisplay('00')">00</button>
+                <button onclick="showInDisplay('0')">0</button>
+                <button onclick="showInDisplay('.')">.</button>
+                <button id="equal" class="operator" onclick="calculate()">=</button>
+            </div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
